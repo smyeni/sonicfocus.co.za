@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Focus | Industrial Electrical & Project Execution | RBIDZ</title>
+    <meta name="description" content="Sonic Focus executes heavy electrical, automation, and industrial projects in the Richards Bay IDZ. Engineering management and turnkey delivery.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6; 
+            color: #1a1a1a;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { 
+            background: #111; 
+            color: #fff; 
+            padding: 15px 0;
+            border-bottom: 3px solid #FFB800;
+        }
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .logo { font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; }
+        .logo span { color: #FFB800; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { 
+            color: #ddd; 
+            text-decoration: none; 
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .nav-links a:hover { color: #FFB800; }
+        
+        /* Hero */
+        .hero {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 120px 20px;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FFB800 0%, #FF6B00 100%);
+        }
+        .hero h1 { 
+            font-size: 3rem; 
+            margin-bottom: 20px; 
+            max-width: 800px;
+        }
+        .hero p { 
+            font-size: 1.25rem; 
+            color: #bbb; 
+            max-width: 700px; 
+            margin-bottom: 35px;
+        }
+        .btn {
+            display: inline-block;
+            background: #FFB800;
+            color: #111;
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .btn:hover { background: #FFA000; }
+        
+        /* Sections */
+        section { padding: 90px 20px; }
+        section h2 { 
+            font-size: 2.4rem; 
+            margin-bottom: 50px; 
+            color: #111;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #FFB800;
+        }
+        .center-title h2::after { left: 50%; transform: translateX(-50%); }
+        .center-title { text-align: center; }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background: #fff;
+            padding: 35px;
+            border: 1px solid #e0e0e0;
+            border-top: 4px solid #FFB800;
+        }
+        .card h3 { margin-bottom: 15px; color: #111; font-size: 1.4rem; }
+        
+        /* Model section */
+        #model { background: #f7f7f7; }
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .model-item { text-align: center; }
+        .model-item strong { 
+            display: block; 
+            font-size: 1.1rem; 
+            margin-bottom: 10px;
+            color: #FFB800;
+        }
+        
+        /* Footer */
+        footer {
+            background: #111;
+            color: #888;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        footer a { color: #FFB800; text-decoration: none; }
+        .group { margin-top: 20px; font-size: 14px; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.1rem; }
+            .nav-links { 
+                flex-wrap: wrap;
+                gap: 15px; 
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Sonic<span>Focus</span></div>
+                <div class="nav-links">
+                    <a href="#capabilities">Capabilities</a>
+                    <a href="#model">Our Model</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Heavy Electrical & Industrial Project Execution</h1>
+            <p>Sonic Focus delivers turnkey electrical, instrumentation, and automation projects for heavy industry in the Richards Bay IDZ. From planning to commissioning.</p>
+            <a href="#contact" class="btn">Discuss Your Project</a>
+        </div>
+    </section>
+
+    <section id="capabilities">
+        <div class="container">
+            <h2>Core Capabilities</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Heavy Electrical</h3>
+                    <p>MV/LV reticulation, substations, MCC installations, motor control, and power distribution upgrades. SANS 10142 compliant installations for industrial plants.</p>
+                </div>
+                <div class="card">
+                    <h3>Industrial Automation</h3>
+                    <p>PLC, SCADA, and DCS systems. Process control, instrumentation, and integration for smelters, chemical plants, and port facilities.</p>
+                </div>
+                <div class="card">
+                    <h3>EPCM Services</h3>
+                    <p>Engineering, Procurement, Construction Management for CAPEX projects. Full project lifecycle from feasibility to handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="model">
+        <div class="container">
+            <div class="center-title">
+                <h2>Engineering-Led Execution Model</h2>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+                    Led by a qualified Electrical Engineer, we combine academic design rigor with field-proven technical teams to deliver complex industrial projects.
+                </p>
+            </div>
+            <div class="model-grid">
+                <div class="model-item">
+                    <strong>1. Engineering Design</strong>
+                    <p>Partnerships with university engineering faculties for planning, load studies, and detailed design work.</p>
+                </div>
+                <div class="model-item">
+                    <strong>2. Technical Execution</strong>
+                    <p>Qualified technicians and artisans handle installation, wiring, and commissioning under engineering supervision.</p>
+                </div>
+                <div class="model-item">
+                    <strong>3. Project Management</strong>
+                    <p>Single point of accountability. Safety files, QA/QC, and compliance managed to RBIDZ standards.</p>
+                </div>
+                <div class="model-item">
+                    <strong>4. Local Delivery</strong>
+                    <p>Richards Bay-based crews. Rapid mobilization for shutdowns and emergency works within the IDZ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Project Focus Areas</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>RBIDZ Infrastructure</h3>
+                    <p>Electrical reticulation and services for new industrial tenants. Substation and distribution board upgrades.</p>
+                </div>
+                <div class="card">
+                    <h3>Plant Shutdowns</h3>
+                    <p>Electrical and instrumentation scope for planned maintenance shutdowns. 24/7 execution crews.</p>
+                </div>
+                <div class="card">
+                    <h3>Energy & Efficiency</h3>
+                    <p>Power factor correction, VSD installations, and energy monitoring systems for industrial consumers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container center-title">
+            <h2>Engage Sonic Focus</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 30px;">
+                For project inquiries, JV opportunities, or vendor pre-qualification:
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:projects@sonicfocus.co.za">projects@sonicfocus.co.za</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+27738440832">073 844 0832</a></p>
+            <p><strong>Operations:</strong> Richards Bay, KwaZulu-Natal</p>
+            <p style="margin-top: 30px; font-size: 14px; color: #666;">
+                Sonic Focus (Pty) Ltd | Reg: 2024/123456/07 | B-BBEE Level 1
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sonic Focus (Pty) Ltd. All rights reserved.</p>
+            <p class="group">A division of the Sonic Group</p>
+        </div>
+    </footer>
+</body>
+</html>
