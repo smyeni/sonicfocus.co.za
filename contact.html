@@ -92,7 +92,6 @@
                     <h3>Send Enquiry</h3>
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="bfec3f1c-4cfd-4ddd-a2cf-2473e947de16">
-                        <input type="hidden" name="subject" value="New Sonic Focus Enquiry from {{company}}">
                         <input type="hidden" name="from_name" value="Sonic Focus">
                         <input type="hidden" name="redirect" value="https://sonicfocus.co.za/thanks.html">
                         <input type="checkbox" name="botcheck" style="display:none;">
@@ -141,7 +140,9 @@
                                       placeholder="Scope, timeline, RBIDZ site location, etc."
                                       style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; resize: vertical;"></textarea>
                         </div>
-                        
+
+                        <input type="hidden" name="subject" value="New Sonic Focus Enquiry from {{company}}">
+                        <input type="checkbox" name="botcheck" style="display:none">
                         <button type="submit" class="btn">Submit Enquiry</button>
                         
                         <p style="font-size: 0.85rem; color: #666; margin-top: 15px; text-align: center;">
