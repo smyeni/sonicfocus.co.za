@@ -94,6 +94,7 @@
                         <input type="hidden" name="access_key" value="bfec3f1c-4cfd-4ddd-a2cf-2473e947de16">
                         <input type="hidden" name="from_name" value="Sonic Focus">
                         <input type="hidden" name="redirect" value="https://sonicfocus.co.za/thanks.html">
+                        <input type="hidden" id="subject" name="subject" value="">
                         
                         <div style="margin-bottom: 20px;">
                             <label for="name" style="display: block; margin-bottom: 6px; font-weight: 600;">Full Name *</label>
@@ -152,6 +153,22 @@
             </div>
         </div>
     </section>
+
+    <!-- Script goes here, after the form -->
+    <script>
+       document.getElementById("contactForm").addEventListener("submit", function() {
+         const name = document.getElementById("name").value;
+         const company = document.getElementById("company").value;
+
+         // Save for thank-you page personalization
+         //localStorage.setItem("name", name);
+         //localStorage.setItem("company", company);
+
+         // Set subject line for Web3Forms email
+         document.getElementById("subject").value =
+           `New enquiry from ${name} at ${company}`;
+       });
+    </script>
 
     <footer>
         <div class="container">
