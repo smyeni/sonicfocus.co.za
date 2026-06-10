@@ -20,12 +20,12 @@
 
   <script>
     // Grab query parameters from the URL
-    const params = new URLSearchParams(window.location.search);
-    const company = params.get("company");
+    //const params = new URLSearchParams(window.location.search);
+    const company = localStorage.get("company");
 
     // Inject the company name if available
     if (company) {
-      document.getElementById("companyName").textContent = ${company};
+      document.getElementById("companyName").textContent = company;
     } else {
       document.getElementById("companyName").textContent = "your company";
     }
