@@ -1,80 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry Sent - Sonic Focus</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #0a192f;
-            color: #ccd6f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .box {
-            max-width: 600px;
-            background: #112240;
-            padding: 60px 40px;
-            border-radius: 8px;
-            border-top: 4px solid #64ffda;
-        }
-        h1 { 
-            color: #fff; 
-            font-size: 2.5rem; 
-            margin-bottom: 20px;
-        }
-        .check { 
-            color: #64ffda; 
-            font-size: 4rem; 
-            margin-bottom: 20px;
-        }
-        p { 
-            font-size: 1.1rem; 
-            line-height: 1.7; 
-            margin-bottom: 35px;
-            color: #8892b0;
-        }
-        .btn {
-            display: inline-block;
-            background: #64ffda;
-            color: #0a192f;
-            padding: 14px 32px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            margin: 0 10px;
-        }
-        .btn-outline {
-            background: transparent;
-            color: #64ffda;
-            border: 1px solid #64ffda;
-        }
-        @media (max-width: 600px) {
-            .box { padding: 40px 20px; }
-            h1 { font-size: 2rem; }
-            .btn { display: block; margin: 10px 0; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Thank You | Sonic Focus</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    h1 { color: #0a192f; }
+    p { color: #333; font-size: 1.2rem; }
+    .highlight { color: #64ffda; font-weight: bold; }
+  </style>
 </head>
 <body>
-    <div class="box">
-        <div class="check">✓</div>
-        <h1>Enquiry Received</h1>
-        <p>
-            Thank you for contacting Sonic Focus. <br>
-            Our engineering team will review your project requirements and respond within 4 business hours.
-        </p>
-        <p style="font-size: 0.95rem; color: #64ffda;">
-            <!-- For urgent RBIDZ breakdowns, call 073 123 4567 -->
-        </p>
-        <a href="/" class="btn">Back to Home</a>
-        <a href="/contact.html" class="btn btn-outline">Send Another</a>
-    </div>
+  <h1>Thank You!</h1>
+  <p>
+    We’ve received your enquiry from 
+    <span id="companyName" class="highlight"></span>.
+  </p>
+  <p>Our team will respond within 4 business hours.</p>
+
+  <script>
+    // Grab query parameters from the URL
+    const params = new URLSearchParams(window.location.search);
+    const company = params.get("company");
+
+    // Inject the company name if available
+    if (company) {
+      document.getElementById("companyName").textContent = company;
+    } else {
+      document.getElementById("companyName").textContent = "your company";
+    }
+  </script>
 </body>
 </html>
