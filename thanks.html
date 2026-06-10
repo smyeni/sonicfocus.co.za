@@ -9,19 +9,17 @@
     p { color: #333; font-size: 1.2rem; }
     .highlight { color: #64ffda; font-weight: bold; }
   </style>
-
   <script>
-    // Grab query parameters from the URL
-    //const params = new URLSearchParams(window.location.search);
-    const company = localStorage.getItem("company");
-
-    // Inject the company name if available
-    if (company) {
-      document.getElementById("companyName").textContent = company;
-    } else {
-      document.getElementById("companyName").textContent = "your company";
-    }
-  </script>  
+    window.addEventListener("load", function() {
+        const company = localStorage.getItem("company");
+        
+        if (company) {
+          document.getElementById("companyName").textContent = company;
+        } else {
+          document.getElementById("companyName").textContent = "your company";
+        }
+    });
+  </script>
 </head>
 <body>
   <h1>Thank You!</h1>
