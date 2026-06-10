@@ -9,14 +9,6 @@
     p { color: #333; font-size: 1.2rem; }
     .highlight { color: #64ffda; font-weight: bold; }
   </style>
-</head>
-<body>
-  <h1>Thank You!</h1>
-  <p>
-    We’ve received your enquiry from 
-    <span id="companyName" class="highlight"></span>.
-  </p>
-  <p>Our team will respond within 4 business hours.</p>
 
   <script>
     // Grab query parameters from the URL
@@ -29,6 +21,15 @@
     } else {
       document.getElementById("companyName").textContent = "your company";
     }
-  </script>
+  </script>  
+</head>
+<body>
+  <h1>Thank You!</h1>
+  <p>
+    We’ve received your enquiry from 
+    <span id="companyName" class="highlight"></span>.
+  </p>
+  <p>Our team will respond within 4 business hours.</p>
+
 </body>
 </html>
