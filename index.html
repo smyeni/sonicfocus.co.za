@@ -25,6 +25,8 @@
             top: 0;
         }
         -->
+
+        <!--
         header { 
     background: #111; 
     color: #fff; 
@@ -36,6 +38,17 @@
     right: 0; /* added */
     width: 100%; /* added */
     z-index: 1000;
+}
+        -->
+        header { 
+    background: #111; 
+    color: #fff; 
+    padding: 15px 0;
+    border-bottom: 3px solid #FFB800;
+    position: sticky;
+    top: 0;
+    z-index: 1000;   /* 1. Force it to top layer */
+    width: 100%;     /* 2. Prevents weird width bugs on some browsers */
 }
         nav { 
             display: flex; 
