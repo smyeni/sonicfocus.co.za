@@ -15,6 +15,7 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
         /* Header */
+        <!--
         header { 
             background: #111; 
             color: #fff; 
@@ -23,6 +24,19 @@
             position: sticky;
             top: 0;
         }
+        -->
+        header { 
+    background: #111; 
+    color: #fff; 
+    padding: 15px 0;
+    border-bottom: 3px solid #FFB800;
+    position: fixed; /* changed from sticky */
+    top: 0;
+    left: 0;
+    right: 0; /* added */
+    width: 100%; /* added */
+    z-index: 1000;
+}
         nav { 
             display: flex; 
             justify-content: space-between; 
