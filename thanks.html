@@ -14,8 +14,16 @@
   
   <script>
     window.addEventListener("load", function() {
-        const user = localStorage.getItem("userName");
+        /* Grab saved vals */
+        const userName = localStorage.getItem("name");
         const company = localStorage.getItem("company");
+
+        /* Setup thank-you message */
+        if (userName) {
+          document.getElementById("userName").textContent = userName;
+        } else {
+          document.getElementById("userName").textContent = "user";
+        }
       
         if (company) {
           document.getElementById("companyName").textContent = company;
@@ -42,8 +50,8 @@
     </header>
   <h1>Thank You!</h1>
   <p>
-    We’ve received your enquiry from 
-    <span id="companyName" class="highlight"></span>.
+    We’ve received your enquiry from <span id="userName" class="highlight"></span>
+    from <span id="companyName" class="highlight"></span>.
   </p>
   <p>Our team will respond within 4 business hours.</p>
 
