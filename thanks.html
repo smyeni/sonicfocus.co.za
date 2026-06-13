@@ -14,8 +14,9 @@
   
   <script>
     window.addEventListener("load", function() {
+        const user = localStorage.getItem("userName");
         const company = localStorage.getItem("company");
-        
+      
         if (company) {
           document.getElementById("companyName").textContent = company;
         } else {
